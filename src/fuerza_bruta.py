@@ -31,9 +31,9 @@ while cadena != password:
         indice = random.randint(0,26)        
         cadena+=alfabeto[indice]
     intentos+=1
+time.sleep(0)
 final = datetime.now()
 tiempo = final - inicio
-time.sleep(1)
 print('\033[0;32m[INFO] Intentos: \033[0;0m', intentos)
 time.sleep(1)
 print('\033[1;31m[INFO] Contraseña: \033[0;0m', cadena)
